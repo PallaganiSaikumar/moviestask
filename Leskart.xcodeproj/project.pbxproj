@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13AD185C78066D4E9B8D738A /* Pods_Leskart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E84CE9BFF8535136AD1C54D /* Pods_Leskart.framework */; };
+		E60314BD2662007B003E39E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314BC2662007B003E39E7 /* AppDelegate.swift */; };
+		E60314BF2662007B003E39E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314BE2662007B003E39E7 /* SceneDelegate.swift */; };
+		E60314C12662007B003E39E7 /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314C02662007B003E39E7 /* MoviesView.swift */; };
+		E60314C42662007B003E39E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60314C22662007B003E39E7 /* Main.storyboard */; };
+		E60314C62662007C003E39E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60314C52662007C003E39E7 /* Assets.xcassets */; };
+		E60314C92662007C003E39E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E60314C72662007C003E39E7 /* LaunchScreen.storyboard */; };
+		E60314D426620119003E39E7 /* MoviesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314D326620119003E39E7 /* MoviesPresenter.swift */; };
+		E60314D72662013D003E39E7 /* MoviesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314D62662013D003E39E7 /* MoviesInteractor.swift */; };
+		E60314DA26620182003E39E7 /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = E60314D926620182003E39E7 /* movies.json */; };
+		E60314E8266201F4003E39E7 /* DataParsingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314E7266201F4003E39E7 /* DataParsingLayer.swift */; };
+		E60314EE266202D1003E39E7 /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314ED266202D1003E39E7 /* MoviesModel.swift */; };
+		E60314F22662044C003E39E7 /* MoviesDataTransferProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314F12662044C003E39E7 /* MoviesDataTransferProtocols.swift */; };
+		E60314FE2662072A003E39E7 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60314FC2662072A003E39E7 /* MovieTableViewCell.swift */; };
+		E60314FF2662072A003E39E7 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60314FD2662072A003E39E7 /* MovieTableViewCell.xib */; };
+		E603150926621474003E39E7 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E603150826621474003E39E7 /* SplashViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E84CE9BFF8535136AD1C54D /* Pods_Leskart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leskart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		399E963946A66B3FC2EC324C /* Pods-Leskart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leskart.debug.xcconfig"; path = "Target Support Files/Pods-Leskart/Pods-Leskart.debug.xcconfig"; sourceTree = "<group>"; };
+		6EA5C4FA66D1E06216A481B1 /* Pods-Leskart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leskart.release.xcconfig"; path = "Target Support Files/Pods-Leskart/Pods-Leskart.release.xcconfig"; sourceTree = "<group>"; };
+		E60314B92662007B003E39E7 /* Leskart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leskart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60314BC2662007B003E39E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E60314BE2662007B003E39E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E60314C02662007B003E39E7 /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		E60314C32662007B003E39E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E60314C52662007C003E39E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E60314C82662007C003E39E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E60314CA2662007C003E39E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60314D326620119003E39E7 /* MoviesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPresenter.swift; sourceTree = "<group>"; };
+		E60314D62662013D003E39E7 /* MoviesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesInteractor.swift; sourceTree = "<group>"; };
+		E60314D926620182003E39E7 /* movies.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
+		E60314E7266201F4003E39E7 /* DataParsingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsingLayer.swift; sourceTree = "<group>"; };
+		E60314ED266202D1003E39E7 /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		E60314F12662044C003E39E7 /* MoviesDataTransferProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDataTransferProtocols.swift; sourceTree = "<group>"; };
+		E60314FC2662072A003E39E7 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		E60314FD2662072A003E39E7 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		E603150826621474003E39E7 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E60314B62662007B003E39E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13AD185C78066D4E9B8D738A /* Pods_Leskart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02CC42DB747BF08E2BF694B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E84CE9BFF8535136AD1C54D /* Pods_Leskart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60314B02662007B003E39E7 = {
+			isa = PBXGroup;
+			children = (
+				E60314BB2662007B003E39E7 /* Leskart */,
+				E60314BA2662007B003E39E7 /* Products */,
+				F3D906DD9FD61637146ABD07 /* Pods */,
+				02CC42DB747BF08E2BF694B5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E60314BA2662007B003E39E7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E60314B92662007B003E39E7 /* Leskart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E60314BB2662007B003E39E7 /* Leskart */ = {
+			isa = PBXGroup;
+			children = (
+				E60314BC2662007B003E39E7 /* AppDelegate.swift */,
+				E60314BE2662007B003E39E7 /* SceneDelegate.swift */,
+				E603150826621474003E39E7 /* SplashViewController.swift */,
+				E60314E2266201B0003E39E7 /* DataLayer */,
+				E60314E5266201C8003E39E7 /* Movies */,
+				E60314C22662007B003E39E7 /* Main.storyboard */,
+				E60314C52662007C003E39E7 /* Assets.xcassets */,
+				E60314C72662007C003E39E7 /* LaunchScreen.storyboard */,
+				E60314CA2662007C003E39E7 /* Info.plist */,
+			);
+			path = Leskart;
+			sourceTree = "<group>";
+		};
+		E60314E2266201B0003E39E7 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E60314E7266201F4003E39E7 /* DataParsingLayer.swift */,
+				E60314F526620484003E39E7 /* Models */,
+				E60314F62662048E003E39E7 /* DataFiles */,
+			);
+			path = DataLayer;
+			sourceTree = "<group>";
+		};
+		E60314E5266201C8003E39E7 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				E603150626620C9A003E39E7 /* Views */,
+				E60314D326620119003E39E7 /* MoviesPresenter.swift */,
+				E60314D62662013D003E39E7 /* MoviesInteractor.swift */,
+				E60314F12662044C003E39E7 /* MoviesDataTransferProtocols.swift */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		E60314F526620484003E39E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E60314ED266202D1003E39E7 /* MoviesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E60314F62662048E003E39E7 /* DataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E60314D926620182003E39E7 /* movies.json */,
+			);
+			path = DataFiles;
+			sourceTree = "<group>";
+		};
+		E603150426620C92003E39E7 /* MovieTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				E60314FC2662072A003E39E7 /* MovieTableViewCell.swift */,
+				E60314FD2662072A003E39E7 /* MovieTableViewCell.xib */,
+			);
+			path = MovieTableViewCell;
+			sourceTree = "<group>";
+		};
+		E603150626620C9A003E39E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E60314C02662007B003E39E7 /* MoviesView.swift */,
+				E603150426620C92003E39E7 /* MovieTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3D906DD9FD61637146ABD07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				399E963946A66B3FC2EC324C /* Pods-Leskart.debug.xcconfig */,
+				6EA5C4FA66D1E06216A481B1 /* Pods-Leskart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E60314B82662007B003E39E7 /* Leskart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60314CD2662007C003E39E7 /* Build configuration list for PBXNativeTarget "Leskart" */;
+			buildPhases = (
+				C05A98388CB753546DE6AF12 /* [CP] Check Pods Manifest.lock */,
+				E60314B52662007B003E39E7 /* Sources */,
+				E60314B62662007B003E39E7 /* Frameworks */,
+				E60314B72662007B003E39E7 /* Resources */,
+				1022A187CA86E554A73FAF33 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Leskart;
+			productName = Leskart;
+			productReference = E60314B92662007B003E39E7 /* Leskart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E60314B12662007B003E39E7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E60314B82662007B003E39E7 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = E60314B42662007B003E39E7 /* Build configuration list for PBXProject "Leskart" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E60314B02662007B003E39E7;
+			productRefGroup = E60314BA2662007B003E39E7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E60314B82662007B003E39E7 /* Leskart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E60314B72662007B003E39E7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60314C92662007C003E39E7 /* LaunchScreen.storyboard in Resources */,
+				E60314FF2662072A003E39E7 /* MovieTableViewCell.xib in Resources */,
+				E60314C62662007C003E39E7 /* Assets.xcassets in Resources */,
+				E60314DA26620182003E39E7 /* movies.json in Resources */,
+				E60314C42662007B003E39E7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1022A187CA86E554A73FAF33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leskart/Pods-Leskart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Leskart/Pods-Leskart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Leskart/Pods-Leskart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05A98388CB753546DE6AF12 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Leskart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E60314B52662007B003E39E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60314C12662007B003E39E7 /* MoviesView.swift in Sources */,
+				E60314F22662044C003E39E7 /* MoviesDataTransferProtocols.swift in Sources */,
+				E60314FE2662072A003E39E7 /* MovieTableViewCell.swift in Sources */,
+				E60314BD2662007B003E39E7 /* AppDelegate.swift in Sources */,
+				E60314BF2662007B003E39E7 /* SceneDelegate.swift in Sources */,
+				E60314EE266202D1003E39E7 /* MoviesModel.swift in Sources */,
+				E60314D72662013D003E39E7 /* MoviesInteractor.swift in Sources */,
+				E60314E8266201F4003E39E7 /* DataParsingLayer.swift in Sources */,
+				E60314D426620119003E39E7 /* MoviesPresenter.swift in Sources */,
+				E603150926621474003E39E7 /* SplashViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E60314C22662007B003E39E7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60314C32662007B003E39E7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E60314C72662007C003E39E7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60314C82662007C003E39E7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E60314CB2662007C003E39E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E60314CC2662007C003E39E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E60314CE2662007C003E39E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399E963946A66B3FC2EC324C /* Pods-Leskart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LZUZ5B8C7;
+				INFOPLIST_FILE = Leskart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saikumar.Leskart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E60314CF2662007C003E39E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EA5C4FA66D1E06216A481B1 /* Pods-Leskart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4LZUZ5B8C7;
+				INFOPLIST_FILE = Leskart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Saikumar.Leskart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E60314B42662007B003E39E7 /* Build configuration list for PBXProject "Leskart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60314CB2662007C003E39E7 /* Debug */,
+				E60314CC2662007C003E39E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60314CD2662007C003E39E7 /* Build configuration list for PBXNativeTarget "Leskart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60314CE2662007C003E39E7 /* Debug */,
+				E60314CF2662007C003E39E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E60314B12662007B003E39E7 /* Project object */;
+}
